@@ -2,8 +2,6 @@
 
 This project is a small, production-style **semantic image search** service: images are embedded with **OpenAI CLIP** (via Hugging Face Transformers), stored in a **FAISS** index, and queried by **natural language** or by **another image**. Retrieval uses **cosine similarity** (implemented as inner product on **L2-normalized** CLIP vectors) or optional **L2** distance on the same vectors. A **Gradio** UI provides two tabs—text → image and image → image—with optional **tag-based filtering** when a `tags.json` file is present next to your images.
 
-The codebase is modular (`backend/` for embedding, indexing, and search; `app.py` for the UI), typed where it matters, and suitable to showcase on a machine learning or AI engineering CV as a complete retrieval pipeline.
-
 ## Features
 
 - **Text → image** and **image → image** search with shared CLIP embedding space
@@ -37,11 +35,7 @@ pip install -r requirements.txt
 
 ### Sample images (optional)
 
-Put JPEG/PNG/WebP files under `data/images/`, or download a few placeholders:
-
-```bash
-python scripts/download_sample_images.py
-```
+Put JPEG/PNG/WebP files under `data/images/`
 
 ### Build the FAISS index
 
@@ -119,8 +113,8 @@ If `artifacts/` is empty, build the index inside the container (one-off) or copy
 
 ## Screenshots
 
-_Add Gradio screenshots here after running the app (text search and image search tabs)._
+tba
 
 ## License
 
-Model weights are subject to the CLIP / Hugging Face model licenses. Use this project’s code under terms you choose for your portfolio (e.g. MIT) if you add a `LICENSE` file.
+Model weights are subject to the CLIP / Hugging Face model licenses. 
