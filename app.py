@@ -2,6 +2,9 @@
 
 from __future__ import annotations
 
+import os
+os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
+
 import argparse
 import logging
 from pathlib import Path
@@ -191,7 +194,7 @@ def main() -> None:
     logger.info("%s", msg)
 
     demo = build_app(status_message=msg)
-    demo.launch(server_name=args.host, server_port=args.port)
+    demo.launch(server_name=args.host, server_port=args.port, share=True)
 
 
 if __name__ == "__main__":
