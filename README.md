@@ -115,6 +115,3 @@ If `artifacts/` is empty, build the index inside the container (one-off) or copy
 
 ![Demo](./assets/demo.gif)
 
-## License
-
-Model weights are subject to the CLIP / Hugging Face model licenses. tba
